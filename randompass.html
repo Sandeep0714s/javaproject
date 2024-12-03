@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        margin: auto;
+        height: 100vh;
+        width: 80vw;
+        background-image: url(./360_F_556291020_q2ieMiOCKYbtoLITrnt7qcSL1LJYyWrU.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      h3{
+        text-align: center;
+        color: magenta;
+        margin-top: 10px;
+      }
+      input{
+        text-align: center;
+        margin-left: 40%;
+        margin-top: 10px;
+      }
+      .types{
+        text-align: center;
+        margin-top: 10px;
+      }
+      .btnn{
+        margin-left: 40%;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>
+          Random Password Generator
+        </h3>
+        <div id="error"></div>
+  
+        <input type="text" readonly="" id="password">
+  
+        <div>
+          <input type="text" id="inputLength" placeholder="Enter Password Length">
+        </div>
+  
+        <div >
+        
+          <div class="types">Include At Least One Type </div>
+          <br>
+          <div>
+            <input type="checkbox" name="radio" id="lowercase" >;
+            <label for="lowercase"> Lowercase Alphabets</label>
+          </div>
+          <div>
+            <input type="checkbox" name="radio" id="uppercase">;
+            <label for="uppercase"> Uppercase Alphabets</label>
+          </div>
+          <div>
+            <input type="checkbox"name="radio" id="symbol">;
+            <label for="symbol"> Symbols</label>
+          </div>
+          <div>
+            <input type="checkbox" name="radio" id="number">;
+            <label for="number"> Number</label>
+          </div>
+        </div>
+        <button class="btnn">Generate Password</button>
+      </div>
+      <script src="RANDOMPASSWORD.JS"></script>
+</body>
+</html>
